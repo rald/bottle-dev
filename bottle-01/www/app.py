@@ -1,6 +1,5 @@
 #!/usr/bin/env python3.12
 from bottle import route, run, template, view, static_file, SimpleTemplate
-import sqlite3
 
 @route('/static/<filepath:path>')
 def server_static(filepath):

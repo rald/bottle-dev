@@ -21,6 +21,6 @@
 
 	<h1>Donation</h1>
 
-	<a href="static/images/gcash.jpg">Donate here using GCash</a><br><br>
+	<a href="gcash.jpg">Donate here using GCash</a><br><br>
 
 </center>
