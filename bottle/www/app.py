@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.12
+#!/usr/bin/env python
 import os
 import sqlite3
 from bottle import Bottle, run, route, view, static_file, abort, template, SimpleTemplate
@@ -7,7 +7,7 @@ app = Bottle()
 
 @app.route('/static/<filepath:path>')
 def server_static(filepath):
-    return static_file(filepath, root='/home/fria/projects/bottle/www/static')
+    return static_file(filepath, root='/root/projects/bottle-dev/bottle/www/static')
 
 @app.route('/')
 @view('home')
@@ -52,4 +52,4 @@ def list_directory(subpath=''):
         return abort(404, "File not found.")
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=14344, debug=True)
+    app.run(host='127.0.0.1', port=14344, debug=True)
